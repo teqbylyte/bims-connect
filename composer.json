@@ -1,6 +1,7 @@
 {
     "name": "teqbylyte/bims-connect",
     "description": "A Socialite extension to provide authentication functionality specific to BIMS - Beneficiary Identity Management Service by TETFund.",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Teqbylyte\\BimsConnect\\": "src/"
@@ -12,7 +13,15 @@
             "email": "lyte.onyema@gmail.com"
         }
     ],
+    "require": {
+        "laravel/socialite": "^5.11"
+    },
     "require-dev": {
         "orchestra/testbench": "^8.21"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Teqbylyte\\BimsConnect\\Tests\\": "tests/"
+        }
     }
 }
