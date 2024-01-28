@@ -1,0 +1,18 @@
+{
+    "name": "teqbylyte/bims-connect",
+    "description": "A Socialite extension to provide authentication functionality specific to BIMS - Beneficiary Identity Management Service by TETFund.",
+    "autoload": {
+        "psr-4": {
+            "Teqbylyte\\BimsConnect\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lyte Onyema",
+            "email": "lyte.onyema@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^8.21"
+    }
+}
