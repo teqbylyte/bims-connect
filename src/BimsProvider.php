@@ -56,7 +56,7 @@ class BimsProvider extends AbstractProvider
      */
     protected function getUserByToken($token)
     {
-
+        // Todo: Implement
     }
 
     /**
