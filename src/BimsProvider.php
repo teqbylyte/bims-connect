@@ -9,7 +9,7 @@ use Laravel\Socialite\Two\InvalidStateException;
 
 class BimsProvider extends AbstractProvider
 {
-    const string BASE_URL = 'https://bims.tetfund.gov.ng';
+    const BASE_URL = 'https://bims.tetfund.gov.ng';
 
     /**
      * The separating character for the requested scopes.
