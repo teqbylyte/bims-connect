@@ -23,5 +23,12 @@
         "psr-4": {
             "Teqbylyte\\BimsConnect\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+         "laravel": {
+            "providers": [
+                "Teqbylyte\\BimsConnect\\BimsConnectServiceProvider"
+            ]
+         }
     }
 }

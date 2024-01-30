@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Laravel\Socialite\Facades\Socialite;
 use Laravel\Socialite\SocialiteServiceProvider;
 
-class BimsServiceProvider extends ServiceProvider
+class BimsConnectServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
