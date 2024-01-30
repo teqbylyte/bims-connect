@@ -26,7 +26,7 @@ class BimsConnectTest extends TestCase
         Socialite::shouldReceive('driver')->with('bims')->andReturn($mockBimsDriver);
 
         // Call the BimsConnect package to get the redirect URL
-        $redirectUrl = BimsConnect::driver()->redirect()->getTargetUrl();
+        $redirectUrl = BimsConnect::init()->redirect()->getTargetUrl();
 
         // Assert that the redirect URL matches the expected URL
         $this->assertEquals($url, $redirectUrl);

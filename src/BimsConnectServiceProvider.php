@@ -19,7 +19,7 @@ class BimsConnectServiceProvider extends ServiceProvider
             return new BimsProvider(
                 $this->app['request'],
                 $this->app['config']->get('services.bims.client_id'),
-                $this->app['config']->get('services.bims.client_token'),
+                $this->app['config']->get('services.bims.client_secret'),
                 $this->app['config']->get('services.bims.redirect')
             );
         });

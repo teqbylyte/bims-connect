@@ -34,7 +34,7 @@ class BimsProvider extends AbstractProvider
         return self::BASE_URL . '/oauth/token';
     }
 
-    public function user(): User|null
+    public function user(): User|BimsUser|null
     {
         if ($this->user) {
             return $this->user;

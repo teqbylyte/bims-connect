@@ -11,7 +11,7 @@ class BimsConnect
      *
      * @return \Laravel\Socialite\Contracts\Provider|mixed
      */
-    public static function driver(): mixed
+    public static function init(): mixed
     {
         return Socialite::driver('bims');
     }
