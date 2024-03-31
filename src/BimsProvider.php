@@ -10,6 +10,7 @@ use Laravel\Socialite\Two\InvalidStateException;
 class BimsProvider extends AbstractProvider
 {
     const BASE_URL = 'https://bims.tetfund.gov.ng';
+    const ACCOUNT_BASE_URL = 'https://account.bims.ng';
 
     /**
      * The separating character for the requested scopes.
