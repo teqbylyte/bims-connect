@@ -85,4 +85,15 @@ class BimsProvider extends AbstractProvider
 
         return $user;
     }
+
+    public function logoutUrl(string $bims_id, string $redirect_url): string
+    {
+        $client_id  = config('services.bims.client_id');
+
+        return sprintf("https://account.bims.ng/clients/%s/users/%s/logout?redirect_to=%s",
+         $client_id,
+         $bims_id,
+         $redirect_url
+        );
+    }
 }
