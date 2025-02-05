@@ -64,6 +64,8 @@ class BimsProvider extends AbstractProvider
      */
     protected function mapUserToObject(array $user): BimsUser
     {
+        $institution = is_null($user['institution']) ? null : (object) $user['institution'];
+
         $user = (new BimsUser)->setRaw($user)->map([
             'id'                => $user['bims_id'],
             'first_name'        => $user['first_name'],
@@ -76,7 +78,7 @@ class BimsProvider extends AbstractProvider
             'type'              => $user['type'],
             'unique_id'         => $user['unique_id'],
             'institution_id'    => $user['institution_id'],
-            'institution'       => (object) $user['institution'],
+            'institution'       => $institution,
         ]);
 
         $name = $user->first_name . ' ' . $user->middle_name . ' ' . $user->last_name;

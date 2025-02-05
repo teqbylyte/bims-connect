@@ -14,7 +14,7 @@ class BimsUser extends User
 
     public string $type;
 
-    public object $institution;
+    public ?object $institution;
 
     public function getFirstName(): string
     {
@@ -38,7 +38,7 @@ class BimsUser extends User
 
     public function getInstitutionId(): int
     {
-        return $this->institution->id;
+        return $this->institution?->id;
     }
 
     public function isAcademicStaff(): bool
